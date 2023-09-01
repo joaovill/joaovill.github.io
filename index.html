@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="./OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
         <script src="./assets/js/jquery-3.2.1.min.js"></script>
         <script src="./bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-        <script src="./OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
         <script src="./assets/js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -133,14 +133,97 @@
     </div>
     
     <!-- TAB Partners -->
-    <div class="container-fluid">
-        <br>
-        <br>
-        <br>
-        <h2>AQUI PARCEIROS</h2>
-        <br>
-        <br>
-        <br>
+    <div class="section-partners ov-hidden">
+        <h3 class="fw-7 text-center">Marcas Parceiras</h4>
+        <ul class="nav nav-tabs" id="myTabPartners" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="forever-tab" data-toggle="tab" href="#forever" role="tab" aria-controls="forever" aria-selected="true">
+                    <img src="./assets/img/forever.png" alt="Forever Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comma-tab" data-toggle="tab" href="#comma" role="tab" aria-controls="comma" aria-selected="false">
+                    <img src="./assets/img/comma.png" alt="Comma Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="melissa-tab" data-toggle="tab" href="#melissa" role="tab" aria-controls="melissa" aria-selected="false">
+                    <img src="./assets/img/melissa.png" alt="Melissa Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="zara-tab" data-toggle="tab" href="#zara" role="tab" aria-controls="zara" aria-selected="false">
+                    <img src="./assets/img/zara.png" alt="Zara Logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ann-tab" data-toggle="tab" href="#ann" role="tab" aria-controls="ann" aria-selected="false">
+                    <img src="./assets/img/ann-taylor.png" alt="Ann Taylor Logo">
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="forever" role="tabpanel" aria-labelledby="forever-tab">
+                <h4 class="fw-7 text-center">As Mais Pedidas Forever21</h4>
+                <div id="owl-products" class="owl-carousel owl-theme">
+                    <div class="item item-why">
+                        <img src="./assets/img/produto-1.png" alt="Imagem do Produto">
+                        <ul class="color-sku">
+                            <li class="color-brown active"></li>
+                            <li class="color-red"></li>
+                            <li class="color-l-blue"></li>
+                            <li class="color-blue"></li>
+                        </ul>
+                        <span class="fw-7 price-product">R$ 500,00</span>
+                        <h5 class="fw-4 title-product">Faux Suede Mini Skirt</h5>
+                        <p class="fw-4 desc-product">A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        <button class="btn-default fw-4 btn-add">Adicionar</button>
+                    </div>
+
+                    <div class="item item-why">
+                        <img src="./assets/img/produto-2.png" alt="Imagem do Produto">
+                        <ul class="color-sku">
+                            <li class="color-black active"></li>
+                            <li class="color-s-red"></li>
+                            <li class="color-brass"></li>
+                            <li class="color-silver"></li>
+                        </ul>
+                        <span class="fw-7 price-product">R$ 320,00</span>
+                        <h5 class="fw-4 title-product">Ruched Rose Print Mini Skirt</h5>
+                        <p class="fw-4 desc-product">A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+                        <button class="btn-default fw-4 btn-add">Adicionar</button>
+                    </div>
+
+                    <div class="item item-why">
+                        <img src="./assets/img/produto-1.png" alt="Imagem do Produto">
+                        <ul class="color-sku">
+                            <li class="color-brown active"></li>
+                            <li class="color-red"></li>
+                            <li class="color-l-blue"></li>
+                            <li class="color-blue"></li>
+                        </ul>
+                        <span class="fw-7 price-product">R$ 500,00</span>
+                        <h5 class="fw-4 title-product">Faux Suede Mini Skirt</h5>
+                        <p class="fw-4 desc-product">A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                        <button class="btn-default fw-4 btn-add">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="comma" role="tabpanel" aria-labelledby="comma-tab">
+                
+            </div>
+
+            <div class="tab-pane fade" id="melissa" role="tabpanel" aria-labelledby="melissa-tab">
+                <h4 class="fw-7 text-center">No momento não há vitrine!</h4>
+            </div>
+            <div class="tab-pane fade" id="zara" role="tabpanel" aria-labelledby="zara-tab">
+                <h4 class="fw-7 text-center">No momento não há vitrine!</h4>
+            </div>
+            <div class="tab-pane fade" id="ann" role="tabpanel" aria-labelledby="ann-tab">
+                <h4 class="fw-7 text-center">No momento não há vitrine!</h4>
+            </div>
+        </div>
     </div>
 
     <!-- Section Lorem -->
@@ -163,6 +246,66 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <div class=" container-fluid footer-links">
+            <div class="info-links">
+                <button class="btn btn-infos collapsed" type="button" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+                    Informações
+                </button>
+                <div class="collapse" id="collapseInfo">
+                    <ul>
+                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="">Prazo de Envio</a></li>
+                        <li><a href="">Trocas e Devoluções</a></li>
+                        <li><a href="">Promoções e Cupons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="account-links">
+                <button class="btn btn-infos collapsed" type="button" data-toggle="collapse" data-target="#collapseAccount" aria-expanded="false" aria-controls="collapseAccount">
+                    Minha Conta
+                </button>
+                <div class="collapse" id="collapseAccount">
+                    <ul>
+                        <li><a href="">Minha Conta</a></li>
+                        <li><a href="">Meus Pedidos</a></li>
+                        <li><a href="">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="where-links">
+                <button class="btn btn-infos collapsed" type="button" data-toggle="collapse" data-target="#collapseWhere" aria-expanded="false" aria-controls="collapseWhere">
+                    Onde nos Encontrar
+                </button>
+                <div class="collapse" id="collapseWhere">
+                    <ul>
+                        <li><a href="">Lojas</a></li>
+                        <li><a href="">Endereço</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid social-footer">
+            <div class="social-media">
+                <a href="#!" target="_blank"><img src="./assets/img/facebook.png" alt="facebook_logo"></a>
+                <a href="#!" target="_blank"><img src="./assets/img/linkedin.png" alt="facebook_logo"></a>
+                <a href="#!" target="_blank"><img src="./assets/img/instagram.png" alt="facebook_logo"></a>
+                <a href="#!" target="_blank"><img src="./assets/img/youtube.png" alt="facebook_logo"></a>
+            </div>
+            <div class="payment-methods">
+                <img src="./assets/img/accepted-payment-methods.png" alt="payment-methods">
+            </div>
+            <div class="creators-link">
+                <a href="#" target="_blank">
+                    <span>Powered by</span>
+                    <img src="./assets/img/vtex-logo.png" alt="Vtex Logo" />
+                </a>
+                <a href="#" target="_blank">
+                    <span>Developed by</span>
+                    <img src="./assets/img/maeztra-logo-gray.png" alt="Maeztra Gray Logo" />
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

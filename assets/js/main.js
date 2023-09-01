@@ -16,5 +16,12 @@ $( document ).ready(function() {
             margin:0,
             nav:false,
         })
+        $('#owl-products').owlCarousel({
+            center: true,
+            dots: false,
+            items: 1,
+            margin:15,
+            nav:false,
+        })
     }
 })
